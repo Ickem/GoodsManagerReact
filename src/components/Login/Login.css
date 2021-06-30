@@ -1,0 +1,47 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.submit{
+    margin: 10px 0;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 0.7em 0.5em;
+    color: #FFF;
+    background: #03A9F4;
+    border: solid 1px #0f9ada;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form_field {
+    font-size: 1.3rem;
+    padding: 7px 5px;
+}
+
+.username, .password{
+    position: relative;
+}
+
+.username:hover::after,
+.password:hover::after{
+    content: "Login must be 'adm'";
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    color: red
+}
+
+.password:hover::after{
+    content: "Password must be 'test123'";
+}
+
+.err{
+    color: #ff0000;
+}

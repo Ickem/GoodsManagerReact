@@ -1,0 +1,25 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    border: 1px solid black;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+.title{
+    text-align: center;
+}
+
+.poster{
+    text-align: center;
+}
+
+.poster img{
+    width: auto;
+    height: 200px;
+}
+
+.author{
+    text-align: center;
+}

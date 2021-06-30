@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logout{
+  height: 30px;
+  margin: auto 0;
+}
