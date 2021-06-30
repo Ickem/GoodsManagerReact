@@ -3,10 +3,12 @@ import './Card.css'
 
 export default function Card({item}){
     return <div className="card">
-        <div className="title">{item.name}</div>
+        <div className="title">{item.title}</div>
         <div className="poster">
             <img src={item.poster}/>
         </div>
-        <div className="author">Author: {item.author}</div>
+        <div className="author">
+            {item.author ? 'Author:'+item.author : 'Year:'+item.Year}
+        </div>
     </div>
 }

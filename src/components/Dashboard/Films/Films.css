@@ -1,0 +1,11 @@
+.films-title{
+    text-align: center;
+}
+
+.films-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+

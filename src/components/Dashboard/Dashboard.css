@@ -33,6 +33,6 @@
     background-color: #fdfdfd;
     flex-grow: 1;
     padding: 10px;
-
+    border-top: 1px solid #444444;
 }
 
