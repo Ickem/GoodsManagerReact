@@ -7,6 +7,6 @@ export default function Card({item}){
         <div className="poster">
             <img src={item.poster}/>
         </div>
-        <div className="author">{item.author}</div>
+        <div className="author">Author: {item.author}</div>
     </div>
 }

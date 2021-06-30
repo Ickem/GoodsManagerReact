@@ -30,7 +30,9 @@
 }
 
 .content{
-    background-color: green;
+    background-color: #fdfdfd;
     flex-grow: 1;
+    padding: 10px;
+
 }
 

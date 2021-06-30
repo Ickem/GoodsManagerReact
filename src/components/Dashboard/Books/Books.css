@@ -1,6 +1,11 @@
+.books-title{
+    text-align: center;
+}
+
 .books-wrapper{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
 }
 

@@ -27,7 +27,7 @@
 ,
   {
     "id" : 10012,
-    "name" : "Sophie's World : The Greek Philosophers",
+    "name" : "Sophie's World: The Greek Philosophers",
     "author" : "Jostein Gaarder",
     "poster" : "https://images-na.ssl-images-amazon.com/images/I/51NJS79ZK8L._SX335_BO1,204,203,200_.jpg",
     "sequence_i" : 1,
@@ -48,4 +48,5 @@
     "price" : 30.50,
     "pages_i" : 475
   }
+
 ]

@@ -4,15 +4,16 @@ import booksJSON from '../../../utils/books.json'
 import './Books.css';
 
 export default function Books() {
-
-return <div className="books-wrapper">
-    {booksJSON.map((item)=>(
-        <Card
-            key={item.id}
-            item={item}
-        />
-    ))}
-</div>
-
+    return <Fragment>
+        <h1 className="books-title">Books</h1>
+        <div className="books-wrapper">
+        {booksJSON.map((item)=>(
+            <Card
+                key={item.id}
+                item={item}
+            />
+        ))}
+        </div>
+    </Fragment>
 
 }
