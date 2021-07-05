@@ -1,16 +1,17 @@
 import React, {Fragment} from 'react';
-import {
-    Route,
-    Switch,
-    Link
-    } from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
+import SearchBar from './SearchBar/SearchBar';
 import Books from './Books/Books';
 import Films from './Films/Films';
 import './Dashboard.css'
 
 export default function Dashboard() {
     return <Fragment>
-        <h2>Dashboard</h2>
+        <div className="dashboard-header">
+            <h2>Dashboard</h2>
+           <SearchBar />
+        </div>
+
         <div className="dashboard-wrapper">
             <div className="sections">
                 <h2>Sections</h2>

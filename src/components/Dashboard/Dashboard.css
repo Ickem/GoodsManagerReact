@@ -4,6 +4,27 @@
     height: 80vh;
 }
 
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-header .search-bar{
+   margin: auto 0;
+}
+
+.search-bar label{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search-bar input{
+    font-size: 1.1rem;
+    padding: 7px 5px;
+}
+
 .sections{
     background-color: #444444;
     display: flex;
