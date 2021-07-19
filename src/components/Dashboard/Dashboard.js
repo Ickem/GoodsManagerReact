@@ -3,6 +3,7 @@ import {Route, Link} from 'react-router-dom';
 import SearchBar from './SearchBar/SearchBar';
 import Books from './Books/Books';
 import Films from './Films/Films';
+import Modal from './Modal/Modal';
 import booksJSON from '../../utils/books.json';
 import filmsJSON from '../../utils/films.json';
 
@@ -16,7 +17,13 @@ class Dashboard extends React.Component{
             filteredDataBooks: booksJSON,
             filteredDataFilms: filmsJSON,
             jsonDataBooks: booksJSON,
-            jsonDataFilms: filmsJSON
+            jsonDataFilms: filmsJSON,
+            modalActive: false,
+            sectionsValue: 0,
+            sectionsList: [
+                'books',
+                'films'
+            ]
         };
     }
 
@@ -50,13 +57,27 @@ class Dashboard extends React.Component{
         })
     }
 
+    setModalActive(){
+        this.setState({modalActive: false});
+    }
+
+    handleChangeBooks(e){
+        this.setState({sectionsValue: e.target.value});
+    }
+
     render(){
+        const optionsBooks = this.state.sectionsList.map((item, i)=>(
+                <option key={i} value={i}>{item}</option>
+        ));
+
         return <Fragment>
             <div className="dashboard-header">
                 <h2>Dashboard</h2>
+                <button onClick={()=> this.setState({modalActive:true})}>Add</button>
                 <SearchBar
                     onChange={this.getValueSearch.bind(this)}
-                    value={this.state.valueSearchInput}/>
+                    value={this.state.valueSearchInput}
+                />
             </div>
 
             <div className="dashboard-wrapper">
@@ -88,6 +109,13 @@ class Dashboard extends React.Component{
                     </Route>
                 </div>
             </div>
+            <Modal
+                active={this.state.modalActive}
+                setActive={this.setModalActive.bind(this)}
+                sectionsValue={this.state.sectionsValue}
+                sectionsList={optionsBooks}
+                handleChange={this.handleChangeBooks.bind(this)}
+            />
         </Fragment>
     }
 }
