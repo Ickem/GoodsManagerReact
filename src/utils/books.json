@@ -4,7 +4,7 @@
     "title" : "The Lightning Thief",
     "author" : "Rick Riordan",
     "poster" : "https://images-na.ssl-images-amazon.com/images/I/51eyP2geWiL._SX329_BO1,204,203,200_.jpg",
-    "genre_s" : "fantasy"
+    "genre" : "fantasy"
   }
 ,
   {
@@ -12,7 +12,7 @@
     "title" : "The Sea of Monsters",
     "author" : "Rick Riordan",
     "poster": "https://images-na.ssl-images-amazon.com/images/I/41KcMiILKfL._SX263_BO1,204,203,200_.jpg",
-    "genre_s" : "fantasy"
+    "genre" : "fantasy"
   }
 ,
   {
@@ -20,7 +20,7 @@
     "title" : "Sophie's World: The Greek Philosophers",
     "author" : "Jostein Gaarder",
     "poster" : "https://images-na.ssl-images-amazon.com/images/I/51NJS79ZK8L._SX335_BO1,204,203,200_.jpg",
-    "genre_s" : "fantasy"
+    "genre" : "fantasy"
   }
 ,
   {
@@ -28,7 +28,7 @@
     "title" : "Lucene in Action, Second Edition",
     "author" : "Michael McCandless",
     "poster" : "https://images-na.ssl-images-amazon.com/images/I/41pPLKeK90L._SX396_BO1,204,203,200_.jpg",
-    "genre_s" : "IT"
+    "genre" : "IT"
   }
 
 ]

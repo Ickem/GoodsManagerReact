@@ -23,7 +23,14 @@ class Dashboard extends React.Component{
             sectionsList: [
                 'books',
                 'films'
-            ]
+            ],
+            inputBooks:{
+                id: '',
+                title: '',
+                author: '',
+                poster: '',
+                genre: ''
+            }
         };
     }
 
@@ -65,6 +72,35 @@ class Dashboard extends React.Component{
         this.setState({sectionsValue: e.target.value});
     }
 
+    addInfo(e){
+        e.preventDefault();
+        //push info to the server
+
+
+        const newStateInputBooks = this.state.inputBooks;
+        for(var key in newStateInputBooks) {
+            if(newStateInputBooks[key] !== ''){
+                newStateInputBooks[key] = '';
+            } else {
+                console.log('The fields cannot be empty');
+                return;
+            }
+
+        }
+        this.setState({inputBooks: newStateInputBooks});
+        console.log('Information added');
+
+        //similar logic for adding to the "films" section
+    }
+
+    handleChangeInput(e){
+        const {name, value} = e.target;
+        this.setState({inputBooks:{
+            ...this.state.inputBooks, [name]:value
+        }});
+    }
+
+
     render(){
         const optionsBooks = this.state.sectionsList.map((item, i)=>(
                 <option key={i} value={i}>{item}</option>
@@ -79,6 +115,7 @@ class Dashboard extends React.Component{
                     value={this.state.valueSearchInput}
                 />
             </div>
+
 
             <div className="dashboard-wrapper">
                 <div className="sections">
@@ -115,6 +152,9 @@ class Dashboard extends React.Component{
                 sectionsValue={this.state.sectionsValue}
                 sectionsList={optionsBooks}
                 handleChange={this.handleChangeBooks.bind(this)}
+                inputBooks ={this.state.inputBooks}
+                handleChangeInput={this.handleChangeInput.bind(this)}
+                onSubmit={this.addInfo.bind(this)}
             />
         </Fragment>
     }
