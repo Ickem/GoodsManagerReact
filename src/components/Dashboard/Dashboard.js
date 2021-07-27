@@ -1,8 +1,9 @@
 import React, {Fragment} from 'react';
 import {Route, Link} from 'react-router-dom';
-import SearchBar from './SearchBar/SearchBar';
+import Header from './Header/Header';
 import Books from './Books/Books';
 import Films from './Films/Films';
+import Footer from './Footer/Footer';
 import Modal from './Modal/Modal';
 import booksJSON from '../../utils/books.json';
 import filmsJSON from '../../utils/films.json';
@@ -64,6 +65,10 @@ class Dashboard extends React.Component{
         })
     }
 
+    showModalForm(){
+        this.setState({modalActive:true});
+    }
+
     setModalActive(){
         this.setState({modalActive: false});
     }
@@ -107,15 +112,12 @@ class Dashboard extends React.Component{
         ));
 
         return <Fragment>
-            <div className="dashboard-header">
-                <h2>Dashboard</h2>
-                <button onClick={()=> this.setState({modalActive:true})}>Add</button>
-                <SearchBar
-                    onChange={this.getValueSearch.bind(this)}
-                    value={this.state.valueSearchInput}
-                />
-            </div>
-
+            <Header
+                modalActive={this.state.modalActive}
+                showModalForm={this.showModalForm.bind(this)}
+                getValueSearch={this.getValueSearch.bind(this)}
+                valueSearchInput={this.state.valueSearchInput}
+            />
 
             <div className="dashboard-wrapper">
                 <div className="sections">
@@ -146,6 +148,7 @@ class Dashboard extends React.Component{
                     </Route>
                 </div>
             </div>
+            <Footer />
             <Modal
                 active={this.state.modalActive}
                 setActive={this.setModalActive.bind(this)}

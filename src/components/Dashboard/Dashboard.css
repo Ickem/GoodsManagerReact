@@ -1,14 +1,29 @@
 .dashboard-wrapper{
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    min-height: 100vh;
 }
 
 .dashboard-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     font-family: 'Poppins', sans-serif;
+}
+
+.button-modal{
+    margin: auto 0 auto auto;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    background-color: rgb( 43, 153, 91 );
+    border: 1px solid rgb( 33, 126, 74 );
+    cursor: pointer;
+}
+
+.button-modal:hover{
+    background-color: rgb( 75, 183, 141 );
 }
 
 .dashboard-header .search-bar{
@@ -16,7 +31,7 @@
 }
 
 .search-bar label{
-    margin-right: 10px;
+    margin: 0 10px;
     font-size: 18px;
 }
 
@@ -55,5 +70,6 @@
     flex-grow: 1;
     padding: 10px;
     border-top: 1px solid #444444;
+
 }
 
