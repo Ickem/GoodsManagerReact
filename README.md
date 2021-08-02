@@ -1,6 +1,6 @@
 # Goods-Manager
 
-Created to study the react-router-dom bundle.
+Created to study the react-router-dom bundle.  
 It's a simple application that allows you to get information from the server.
 
 ## Authentication menu
