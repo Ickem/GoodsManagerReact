@@ -5,15 +5,15 @@ It's a simple application that allows you to get information from the server.
 
 ## Authentication menu
 
-![example of work](https://github.com/Ickem/GoodsManagerReact/blob/master/authentication.png)
+![example of work](https://github.com/Ickem/GoodsManagerReact/blob/main/authentication.png)
 
 ## Films dashboard
 
-![example of work](https://github.com/Ickem/GoodsManagerReact/blob/master/films-info.png)
+![example of work](https://github.com/Ickem/GoodsManagerReact/blob/main/films-info.png)
 
 ## Modal menu
 
-![example of work](https://github.com/Ickem/GoodsManagerReact/blob/master/modal-menu.png)
+![example of work](https://github.com/Ickem/GoodsManagerReact/blob/main/modal-menu.png)
 
 
 ## Installation
