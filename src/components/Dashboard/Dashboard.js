@@ -105,7 +105,6 @@ class Dashboard extends React.Component{
         }});
     }
 
-
     render(){
         const optionsBooks = this.state.sectionsList.map((item, i)=>(
                 <option key={i} value={i}>{item}</option>

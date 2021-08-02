@@ -1,5 +1,7 @@
 import React,{Fragment} from 'react';
 import Card from '../Card/Card';
+import PropTypes from 'prop-types';
+
 import './Books.css';
 
 export default function Books({jsonData}){
@@ -15,3 +17,7 @@ export default function Books({jsonData}){
         </div>
     </Fragment>
 }
+
+Books.propTypes = {
+    jsonData: PropTypes.array.isRequired
+};

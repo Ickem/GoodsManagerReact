@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SearchBar from '../SearchBar/SearchBar';
 
 export default function Header({
@@ -22,3 +23,10 @@ export default function Header({
         </div>
     );
 }
+
+Header.propTypes = {
+    modalActive: PropTypes.bool,
+    showModalForm: PropTypes.func,
+    getValueSearch: PropTypes.func,
+    valueSearchInput: PropTypes.string
+};
